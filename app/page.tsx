@@ -9,7 +9,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-slate-900 backdrop-blur-md border-b border-slate-800">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <img src="/images/e3-83-ad-e3-82-b3-e3-82-99-e7-99-bd2.png" alt="株式会社TW" className="h-8" />
+          <img src="/images/logo black2" alt="株式会社TW" className="h-8" />
           <a
             href="https://line.me/R/ti/p/@922xylnx?ts=11251237&oat_content=url"
             target="_blank"
