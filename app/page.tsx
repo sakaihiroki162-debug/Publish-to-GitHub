@@ -642,7 +642,7 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-8">
-              <img src="/logo white2.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <img src="/logo-white2.png" alt="株式会社TW" className="h-16 md:h-20" />
             </div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
               ショート動画で、
