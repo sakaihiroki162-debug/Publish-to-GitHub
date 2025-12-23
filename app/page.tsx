@@ -494,7 +494,7 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center mb-8">
-              <img src="/images/e3-83-ad-e3-82-b3-e3-82-991.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <img src="/logo1.png" alt="株式会社TW" className="h-16 md:h-20" />
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-center text-slate-900 mb-6">
               私たちの<span className="text-blue-600">想い</span>
@@ -642,7 +642,7 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-8">
-              <img src="/images/e3-83-ad-e3-82-b3-e3-82-991.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <img src="/logo white2.png" alt="株式会社TW" className="h-16 md:h-20" />
             </div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
               ショート動画で、
@@ -669,7 +669,7 @@ export default function LandingPage() {
       <footer className="bg-slate-900 text-slate-300 py-12 px-4">
         <div className="container mx-auto">
           <div className="flex flex-col items-center">
-            <img src="/images/e3-83-ad-e3-82-b3-e3-82-991.png" alt="株式会社TW" className="h-12 mb-6" />
+            <img src="/logo-white.png" alt="株式会社TW" className="h-12 mb-6" />
             <p className="text-center text-slate-400 text-sm">
               © 2025 株式会社TW. All rights reserved.
               <br />
