@@ -9,7 +9,7 @@ export default function LandingPage() {
       {/* Header */}
       <header className="fixed top-0 w-full z-50 bg-slate-900 backdrop-blur-md border-b border-slate-800">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <img src="/logo-white2.png" alt="株式会社TW" className="h-8" />
+          <img src="/logo-white2.png" alt="株式会社TW" className="h-10 w-auto" />
           <a
             href="https://line.me/R/ti/p/@922xylnx?ts=11251237&oat_content=url"
             target="_blank"
@@ -43,6 +43,27 @@ export default function LandingPage() {
             <p className="text-base md:text-lg text-slate-700 mb-10 leading-relaxed max-w-3xl mx-auto">
               運用社数40社以上。西日本No.1の実績で、貴社の『資産』となる動画を構築します。
             </p>
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:border-blue-600 transition-all">
+                <Trophy className="w-12 h-12 text-blue-600 mx-auto mb-3" />
+                <div className="text-4xl md:text-5xl font-black text-blue-600 mb-2">40社以上</div>
+                <div className="text-sm font-bold text-slate-900 mb-1">運用実績</div>
+                <div className="text-xs text-slate-600">業界問わず多数の成功事例</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:border-blue-600 transition-all">
+                <Target className="w-12 h-12 text-red-600 mx-auto mb-3" />
+                <div className="text-4xl md:text-5xl font-black text-red-600 mb-2">西日本No.1</div>
+                <div className="text-sm font-bold text-slate-900 mb-1">圧倒的成果</div>
+                <div className="text-xs text-slate-600">複数のジャンルで日本一を獲得</div>
+              </div>
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-slate-200 hover:border-blue-600 transition-all">
+                <Clock className="w-12 h-12 text-blue-600 mx-auto mb-3" />
+                <div className="text-4xl md:text-5xl font-black text-blue-600 mb-2">1ヶ月〜</div>
+                <div className="text-sm font-bold text-slate-900 mb-1">安心の契約</div>
+                <div className="text-xs text-slate-600">縛りなしで成果にコミット</div>
+              </div>
+            </div>
+
             <p className="text-sm text-slate-600 mb-4 font-semibold">まずは無料相談で、貴社の勝ち筋をご提案</p>
             <a
               href="https://line.me/R/ti/p/@922xylnx?ts=11251237&oat_content=url"
@@ -69,7 +90,7 @@ export default function LandingPage() {
             こんな<span className="text-blue-600">お悩み</span>ありませんか？
           </h2>
           <p className="text-center text-slate-600 mb-16">Common challenges we solve</p>
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="bg-white border-slate-200 p-8 hover:border-blue-600 hover:shadow-xl hover:shadow-blue-600/10 transition-all duration-300">
               <Users className="w-16 h-16 text-blue-600 mb-6" />
               <h3 className="text-2xl font-bold mb-4 text-slate-900">採用に苦戦している</h3>
@@ -82,6 +103,13 @@ export default function LandingPage() {
               <h3 className="text-2xl font-bold mb-4 text-slate-900">認知度を上げたい</h3>
               <p className="text-slate-600 leading-relaxed">
                 良いサービスなのに知られていない。もっと多くの人に届けば、解決できる悩みがあるのに。
+              </p>
+            </Card>
+            <Card className="bg-white border-slate-200 p-8 hover:border-blue-600 hover:shadow-xl hover:shadow-blue-600/10 transition-all duration-300">
+              <Target className="w-16 h-16 text-blue-600 mb-6" />
+              <h3 className="text-2xl font-bold mb-4 text-slate-900">売上が伸び悩んでいる</h3>
+              <p className="text-slate-600 leading-relaxed">
+                SNSを使って見込み客を集めたいが、ノウハウがなく手探りの状態。集客を強化したい。
               </p>
             </Card>
           </div>
@@ -214,7 +242,9 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-black mb-6 text-white">
-              実績豊富なプロが、貴社のアカウントを診断します。
+              実績豊富なプロが
+              <br />
+              貴社のアカウントを診断します。
             </h2>
             <a
               href="https://line.me/R/ti/p/@922xylnx?ts=11251237&oat_content=url"
@@ -328,6 +358,7 @@ export default function LandingPage() {
           <p className="text-center text-slate-600 mb-4">Flexible plans for every business</p>
           <p className="text-center text-slate-900 font-bold text-lg mb-16">※ 全プラン契約期間の縛りなし</p>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Left: Entry Plan */}
             <Card className="bg-white border-slate-200 p-8 hover:border-blue-600 hover:shadow-lg transition-all duration-300 flex flex-col">
               <div className="mb-6">
                 <div className="inline-block px-4 py-2 bg-slate-100 rounded-full mb-4">
@@ -370,6 +401,7 @@ export default function LandingPage() {
               </a>
             </Card>
 
+            {/* Center: In-house Support Plan (Popular) */}
             <div className="relative md:-mt-4 md:mb-4">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
                 <div className="bg-blue-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
@@ -381,36 +413,29 @@ export default function LandingPage() {
                   <div className="inline-block px-4 py-2 bg-blue-50 rounded-full mb-4">
                     <span className="text-blue-700 text-sm font-bold">Plan B</span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2 text-slate-900">スタンダードプラン</h3>
-                  <p className="text-blue-600 font-semibold text-sm mb-4">丸投げで成果を出す（完全運用代行）</p>
+                  <h3 className="text-2xl font-bold mb-2 text-slate-900">内製化支援プラン</h3>
+                  <p className="text-blue-600 font-semibold text-sm mb-4">社内にノウハウを（内製化支援）</p>
                   <div className="mb-6">
-                    <span className="text-5xl font-black text-slate-900">45万円</span>
+                    <span className="text-5xl font-black text-slate-900">15万円</span>
                     <span className="text-slate-600 ml-2">月額〜</span>
                   </div>
                 </div>
                 <ul className="space-y-3 mb-8 flex-grow">
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">月10本の動画制作</span>
+                    <span className="text-slate-700">運用ノウハウ研修</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">撮影含む</span>
+                    <span className="text-slate-700">撮影・編集指導</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">アカウント運用代行</span>
+                    <span className="text-slate-700">企画相談（無制限）</span>
                   </li>
                   <li className="flex items-start">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">データ分析・改善提案</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-700">月1回のミーティング</span>
-                  </li>
-                  <li className="flex items-start text-sm text-slate-500">
-                    <span className="ml-7">※ コメント対応は含まず</span>
+                    <span className="text-slate-700">月1回の戦略MTG</span>
                   </li>
                 </ul>
                 <a
@@ -424,34 +449,42 @@ export default function LandingPage() {
               </Card>
             </div>
 
+            {/* Right: Standard Plan */}
             <Card className="bg-white border-slate-200 p-8 hover:border-blue-600 hover:shadow-lg transition-all duration-300 flex flex-col">
               <div className="mb-6">
                 <div className="inline-block px-4 py-2 bg-slate-100 rounded-full mb-4">
                   <span className="text-slate-700 text-sm font-bold">Plan C</span>
                 </div>
-                <h3 className="text-2xl font-bold mb-2 text-slate-900">内製化支援プラン</h3>
-                <p className="text-blue-600 font-semibold text-sm mb-4">社内にノウハウを（内製化支援）</p>
+                <h3 className="text-2xl font-bold mb-2 text-slate-900">スタンダードプラン</h3>
+                <p className="text-blue-600 font-semibold text-sm mb-4">丸投げで成果を出す（完全運用代行）</p>
                 <div className="mb-6">
-                  <span className="text-5xl font-black text-slate-900">15万円</span>
+                  <span className="text-5xl font-black text-slate-900">45万円</span>
                   <span className="text-slate-600 ml-2">月額〜</span>
                 </div>
               </div>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">運用ノウハウ研修</span>
+                  <span className="text-slate-700">月10本の動画制作</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">撮影・編集指導</span>
+                  <span className="text-slate-700">撮影含む</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">企画相談（無制限）</span>
+                  <span className="text-slate-700">アカウント運用代行</span>
                 </li>
                 <li className="flex items-start">
                   <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
-                  <span className="text-slate-700">月1回の戦略MTG</span>
+                  <span className="text-slate-700">データ分析・改善提案</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle2 className="w-5 h-5 text-blue-600 mr-2 flex-shrink-0 mt-0.5" />
+                  <span className="text-slate-700">月1回のミーティング</span>
+                </li>
+                <li className="flex items-start text-sm text-slate-500">
+                  <span className="ml-7">※ コメント対応は含まず</span>
                 </li>
               </ul>
               <a
@@ -494,7 +527,7 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <div className="flex justify-center mb-8">
-              <img src="/logo1.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <img src="/logo-colored.png" alt="株式会社TW" className="h-16 md:h-20" />
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-center text-slate-900 mb-6">
               私たちの<span className="text-blue-600">想い</span>
@@ -642,7 +675,7 @@ export default function LandingPage() {
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-8">
-              <img src="/logo-white2.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <img src="/logo-colored.png" alt="株式会社TW" className="h-16 md:h-20" />
             </div>
             <h2 className="text-4xl md:text-5xl font-black mb-6 text-white">
               ショート動画で、
@@ -666,15 +699,19 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-slate-300 py-12 px-4">
+      <footer className="bg-slate-900 text-white py-16 px-4">
         <div className="container mx-auto">
-          <div className="flex flex-col items-center">
-            <img src="/logo-white.png" alt="株式会社TW" className="h-12 mb-6" />
-            <p className="text-center text-slate-400 text-sm">
-              © 2025 株式会社TW. All rights reserved.
-              <br />
-              ショート動画運用代行・動画制作・研修のプロフェッショナル
-            </p>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <img src="/logo-white2.png" alt="株式会社TW" className="h-16 md:h-20" />
+              <p className="text-slate-400 mt-6 text-balance">
+                株式会社TWは、ショート動画運用代行・動画制作・研修のプロフェッショナルです。
+              </p>
+            </div>
+            <div className="border-t border-slate-800 pt-8 text-center">
+              <img src="/logo-white2.png" alt="株式会社TW" className="h-12 mb-6" />
+              <p className="text-slate-500 text-sm">© 2025 株式会社TW. All rights reserved.</p>
+            </div>
           </div>
         </div>
       </footer>
