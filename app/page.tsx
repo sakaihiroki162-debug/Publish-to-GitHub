@@ -709,7 +709,6 @@ export default function LandingPage() {
               </p>
             </div>
             <div className="border-t border-slate-800 pt-8 text-center">
-              <img src="/logo-white2.png" alt="株式会社TW" className="h-12 mb-6" />
               <p className="text-slate-500 text-sm">© 2025 株式会社TW. All rights reserved.</p>
             </div>
           </div>
